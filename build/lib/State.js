@@ -1,6 +1,7 @@
 'use strict';
 
 var PropTypes = require('./PropTypes');
+var createReactClass = require('create-react-class');
 
 /**
  * A mixin for components that need to know the path, routes, URL
@@ -8,7 +9,7 @@ var PropTypes = require('./PropTypes');
  *
  * Example:
  *
- *   var AboutLink = React.createClass({
+ *   var AboutLink = createReactClass({
  *     mixins: [ Router.State ],
  *     render() {
  *       var className = this.props.className;

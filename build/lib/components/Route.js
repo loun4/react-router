@@ -12,6 +12,7 @@ var React = require('react');
 var invariant = require('invariant');
 var PropTypes = require('../PropTypes');
 var RouteHandler = require('./RouteHandler');
+var createReactClass = require('create-react-class');
 
 /**
  * <Route> components specify components that are rendered to the page when the
@@ -33,7 +34,7 @@ var RouteHandler = require('./RouteHandler');
  *       <Route name="about" handler={About}/>
  *     </Route>
  *   ];
- *   
+ *
  *   Router.run(routes, function (Handler) {
  *     React.render(<Handler/>, document.body);
  *   });
@@ -41,7 +42,7 @@ var RouteHandler = require('./RouteHandler');
  * Handlers for Route components that contain children can render their active
  * child route using a <RouteHandler> element.
  *
- *   var App = React.createClass({
+ *   var App = createReactClass({
  *     render: function () {
  *       return (
  *         <div className="application">

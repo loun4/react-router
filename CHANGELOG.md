@@ -1,3 +1,11 @@
+v0.13.7 - Mon, 24 Jul 2017 12:48:33 GMT
+---------------------------------------
+
+- [9f35f65](../../commit/9f35f65) [added] upgrade react 15.6.1
+- [b237238](../../commit/b237238) [fixed] Removed getter for IE8 compat
+- [53ce7f1](../../commit/53ce7f1) [fixed] #1148 regex for detecting trailing slashes
+
+
 v0.13.6 - Mon, 18 Jul 2016 19:57:19 GMT
 ---------------------------------------
 

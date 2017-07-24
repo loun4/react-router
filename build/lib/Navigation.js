@@ -1,13 +1,14 @@
 'use strict';
 
 var PropTypes = require('./PropTypes');
+var createReactClass = require('create-react-class');
 
 /**
  * A mixin for components that modify the URL.
  *
  * Example:
  *
- *   var MyLink = React.createClass({
+ *   var MyLink = createReactClass({
  *     mixins: [ Router.Navigation ],
  *     handleClick(event) {
  *       event.preventDefault();
