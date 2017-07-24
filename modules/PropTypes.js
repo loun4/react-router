@@ -1,5 +1,5 @@
 var assign = require('object-assign');
-var ReactPropTypes = require('react').PropTypes;
+var ReactPropTypes = require('prop-types'); // ES5 with npm
 var Route = require('./Route');
 
 var PropTypes = assign({}, ReactPropTypes, {

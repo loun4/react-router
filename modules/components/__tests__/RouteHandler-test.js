@@ -6,6 +6,7 @@ var Route = require('../Route');
 var RouteHandler = require('../RouteHandler');
 var TestLocation = require('../../locations/TestLocation');
 var { Bar, Foo } = require('../../TestUtils');
+var createReactClass = require('create-react-class');
 
 describe('RouteHandler', function () {
 
@@ -13,7 +14,7 @@ describe('RouteHandler', function () {
     var updateComponentBeforeNextRender;
     var location = new TestLocation([ '/foo' ]);
 
-    var Root = React.createClass({
+    var Root = createReactClass({
       componentDidMount: function () {
         updateComponentBeforeNextRender = function (cb) {
           this.forceUpdate(cb);
@@ -63,7 +64,7 @@ describe('RouteHandler', function () {
   });
 
   it('renders after an update', function (done) {
-    var Nested = React.createClass({
+    var Nested = createReactClass({
       componentDidMount: function () {
         this.forceUpdate(finishTest);
       },
@@ -77,7 +78,7 @@ describe('RouteHandler', function () {
       }
     });
 
-    var Foo = React.createClass({
+    var Foo = createReactClass({
       render: function () {
         return <div>foo</div>;
       }

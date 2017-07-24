@@ -89,7 +89,9 @@ class Link extends React.Component {
     delete props.activeClassName;
     delete props.activeStyle;
 
-    return React.DOM.a(props, this.props.children);
+    return (
+      <a {...props}>{this.props.children}</a>
+    );
   }
 
 }
